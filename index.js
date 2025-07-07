@@ -33,7 +33,7 @@ const getChoices = () => {
     document.getElementById("humanScore").innerHTML = `Human Score: ${humanScore}`;
     document.getElementById("compScore").innerHTML = `Computer Score: ${compScore}`;
     document.getElementById("round").textContent = `Round ${++round}`;
-    document.getElementById('humanChoice').textContent = '';
+    document.getElementById('humanChoice').value = '';
 }
 
 const winner = () => {
