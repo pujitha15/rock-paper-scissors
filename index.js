@@ -32,10 +32,10 @@ const getChoices = () => {
 
     document.getElementById("humanScore").innerHTML = `Human Score: ${humanScore}`;
     document.getElementById("compScore").innerHTML = `Computer Score: ${compScore}`;
+    document.getElementById("round").textContent = `Round ${++round}`;
+    document.getElementById('humanChoice').textContent = '';
 }
 
 const winner = () => {
-    document.getElementById("round").innerHTML = `Round ${round}`;
     getChoices();
-    round++;
 }
